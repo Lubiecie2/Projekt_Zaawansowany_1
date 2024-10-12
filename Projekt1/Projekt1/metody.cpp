@@ -44,3 +44,6 @@ void replisty::Lista_Dodanie_na_koniec(char v) {
     tail = nws;                 
     count++;
 }
+void replisty::Lista_wyswietl_od_konca() {
+
+}
