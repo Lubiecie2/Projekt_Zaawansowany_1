@@ -2,5 +2,5 @@
 
 int main()
 {
-    std::cout << "siemano!\n";
+    std::cout << "test!\n";
 }
