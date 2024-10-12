@@ -30,3 +30,7 @@ void replisty::Lista_wyswietl() {
     }
     std::cout << std::endl; 
 }
+
+void replisty::Lista_Dodanie_na_koniec(char v) {
+
+}
