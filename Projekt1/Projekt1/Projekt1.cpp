@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "spis.h"
 
 int main()
@@ -13,6 +13,4 @@ int main()
 
     std::cout << "Elementy listy: ";
     lista.Lista_wyswietl();
-
-
 }
