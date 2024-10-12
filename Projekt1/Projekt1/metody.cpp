@@ -45,4 +45,5 @@ void replisty::Lista_Dodanie_na_koniec(char v) {
     count++;
 }
 void replisty::Lista_wyswietl_od_konca(){
+
 }
