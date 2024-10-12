@@ -130,6 +130,9 @@
     <ClCompile Include="metody.cpp" />
     <ClCompile Include="Projekt1.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Spis.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
