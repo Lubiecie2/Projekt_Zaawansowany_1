@@ -21,5 +21,7 @@ public:
     void Lista_Dodanie_na_koniec(char v);
     void Lista_wyswietl_od_konca();
     void Lista_Dodanie_do_srodka(char v, int index);
+    void Lista_Usuwanie_pierwszego_elementu();
+    void Lista_usuwanie_ostatniego_elementu();
 };
 #endif
