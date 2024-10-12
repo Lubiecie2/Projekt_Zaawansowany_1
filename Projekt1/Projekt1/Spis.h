@@ -19,5 +19,6 @@ public:
     void Lista_Dodanie_na_poczatek(char v);
     void Lista_wyswietl();
     void Lista_Dodanie_na_koniec(char v);
+    void Lista_wyswietl_od_konca();
 };
 #endif
