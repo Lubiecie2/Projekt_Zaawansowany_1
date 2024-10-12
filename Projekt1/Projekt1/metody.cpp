@@ -9,15 +9,24 @@ replisty::~replisty() {
 }
 
 void replisty::Lista_Dodanie_na_poczatek(char v) {
-    elisty* p = new elisty(v);
-    p->next = head;
-    head = p; 
+    elisty* nws = new elisty(v);
+    nws->next = head;
+    head = nws; 
     if (count == 0) {
-        tail = p;
+        tail = nws;
     }
     else {
-        p->next->prev = p;
+        nws->next->prev = nws;
     }
     count++;
 }
 
+void replisty::Lista_wyswietl() {
+    elisty* obecny_element = head; 
+
+    while (obecny_element != 0) { 
+        std::cout << obecny_element->data << " "; 
+        obecny_element = obecny_element->next; 
+    }
+    std::cout << std::endl; 
+}
