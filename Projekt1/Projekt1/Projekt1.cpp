@@ -11,6 +11,9 @@ int main()
     lista.Lista_Dodanie_na_koniec('3');     // <--- lista w kolejności 213
     lista.Lista_Dodanie_na_koniec('4');     // <--- lista w kolejności 2134
 
+    lista.Lista_Dodanie_do_srodka('5',3);     // <--- Lista w kolejności 21354
+    lista.Lista_Dodanie_do_srodka('6',1);     // <--- Lista w kolejności 261354
+
     std::cout << "Elementy listy od poczatku: ";
     lista.Lista_wyswietl();
 
