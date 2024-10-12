@@ -46,4 +46,10 @@ void replisty::Lista_Dodanie_na_koniec(char v) {
     count++;
 }
 void replisty::Lista_wyswietl_od_konca(){
+    elisty* obecny_element = tail; 
+    while (obecny_element != 0) {
+        std::cout << obecny_element->data << " ";
+        obecny_element = obecny_element->prev;
+    }
+    std::cout << std::endl; 
 }

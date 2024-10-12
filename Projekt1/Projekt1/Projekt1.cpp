@@ -11,6 +11,9 @@ int main()
     lista.Lista_Dodanie_na_koniec('3');     // <--- lista w kolejności 213
     lista.Lista_Dodanie_na_koniec('4');     // <--- lista w kolejności 2134
 
-    std::cout << "Elementy listy: ";
+    std::cout << "Elementy listy od poczatku: ";
     lista.Lista_wyswietl();
+
+    std::cout << "Elementy listy od konca: ";
+    lista.Lista_wyswietl_od_konca();
 }
