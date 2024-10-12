@@ -1,9 +1,13 @@
 ﻿#include <iostream>
 #include "spis.h"
 
-int main() {
+int main()
+{
+    replisty lista;
 
-    std::cout << "Hello world!";
+    lista.Lista_Dodanie_na_poczatek('1');
+    lista.Lista_Dodanie_na_poczatek('2');
 
-    return 0; 
+    std::cout << "Elementy listy: ";
+    lista.Lista_wyswietl();
 }

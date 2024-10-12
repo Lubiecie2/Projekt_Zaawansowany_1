@@ -17,6 +17,6 @@ public:
     replisty();      
     ~replisty();     
     void Lista_Dodanie_na_poczatek(char v);
+    void Lista_wyswietl();
 };
-
 #endif
