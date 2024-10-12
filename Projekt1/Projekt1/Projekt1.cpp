@@ -1,6 +1,9 @@
 ﻿#include <iostream>
+#include "spis.h"
 
-int main()
-{
-    std::cout << "test!\n";
+int main() {
+
+    std::cout << "Hello world!";
+
+    return 0; 
 }
