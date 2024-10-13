@@ -5,17 +5,29 @@ int main()
 {
     replisty lista;
 
-    lista.Lista_Dodanie_na_poczatek('1');   // <--- lista w kolejności 1
-    lista.Lista_Dodanie_na_poczatek('2');   // <--- lista w kolejności 21
+    lista.Lista_Dodanie_na_poczatek('1');   
+    lista.Lista_Dodanie_na_poczatek('2');  
     
-    lista.Lista_Dodanie_na_koniec('3');     // <--- lista w kolejności 213
-    lista.Lista_Dodanie_na_koniec('4');     // <--- lista w kolejności 2134
+    std::cout << "Aktualna kolejnosc listy po dodaniu na poczatek: ";
+    lista.Lista_wyswietl();
 
-    lista.Lista_Dodanie_do_srodka('5',3);     // <--- Lista w kolejności 21354
-    lista.Lista_Dodanie_do_srodka('6',1);     // <--- Lista w kolejności 261354
+    lista.Lista_Dodanie_na_koniec('3');     
+    lista.Lista_Dodanie_na_koniec('4');     
+
+    std::cout << "Aktualna kolejnosc listy po dodaniu na koniec: ";
+    lista.Lista_wyswietl();
+
+    lista.Lista_Dodanie_do_srodka('5',3);     
+    lista.Lista_Dodanie_do_srodka('6',1);     
+
+    std::cout << "Aktualna kolejnosc listy po dodaniu pod wskazany indeks: ";
+    lista.Lista_wyswietl();
 
     std::cout << "Elementy listy od poczatku: ";
     lista.Lista_wyswietl();
+
+    std::cout << "Nastepny element po podanym indeksie: ";
+    lista.Lista_Wyswietlanie_Nastepnego_elementu(4);
 
     std::cout << "Elementy listy od konca: ";
     lista.Lista_wyswietl_od_konca();
@@ -27,4 +39,5 @@ int main()
     std::cout << "Lista po usunieciu ostatniego elementu: ";
     lista.Lista_usuwanie_ostatniego_elementu();
     lista.Lista_wyswietl();
+
 }
