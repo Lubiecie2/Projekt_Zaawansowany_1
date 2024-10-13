@@ -35,6 +35,10 @@ int main()
     std::cout << "Elementy listy od konca: ";
     lista.Lista_wyswietl_od_konca();
 
+    std::cout << "Lista po usunieciu wybranego elementu: ";
+    lista.Lista_Usuwanie_wybranego_elementu(3);
+    lista.Lista_wyswietl();
+
     std::cout << "Lista po usunieciu pierwszego elementu: ";
     lista.Lista_Usuwanie_pierwszego_elementu();
     lista.Lista_wyswietl();

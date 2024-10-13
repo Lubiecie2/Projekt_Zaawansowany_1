@@ -156,3 +156,29 @@ void replisty::Lista_Wyswietlanie_poprzedniego_elementu(int index) {
         std::cout << "Brak poprzedniego elementu\n";
     }
 }
+
+
+void replisty::Lista_Usuwanie_wybranego_elementu(int index) {
+    elisty* obecny_element = head;
+
+    for (int i = 1; i < index; i++) {
+        obecny_element = obecny_element->next;
+    }
+
+    if (obecny_element->prev != 0) {
+        obecny_element->prev->next = obecny_element->next;
+    }
+    else {
+        head = obecny_element->next;
+    }
+
+    if (obecny_element->next != 0) {
+        obecny_element->next->prev = obecny_element->prev;
+    }
+    else {
+        tail = obecny_element->prev;
+    }
+
+    delete obecny_element;
+    --count;
+}
