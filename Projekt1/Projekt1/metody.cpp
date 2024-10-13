@@ -128,6 +128,7 @@ void replisty::Lista_usuwanie_ostatniego_elementu() {
     --count;
 }
 
+/*---wyswietlanie elementu po wskazanym indeksie---*/
 void replisty::Lista_Wyswietlanie_Nastepnego_elementu(int index) {
     elisty* obecny_element = head;
 
@@ -139,5 +140,19 @@ void replisty::Lista_Wyswietlanie_Nastepnego_elementu(int index) {
     }
     else {
         std::cout << "Brak nastêpnego elementu\n";
+    }
+}
+
+void replisty::Lista_Wyswietlanie_poprzedniego_elementu(int index) {
+    elisty* obecny_element = head;
+
+    for (int i = 1; i < index; i++) {
+        obecny_element = obecny_element->next;
+    }
+    if (obecny_element->prev != 0) {
+        std::cout << obecny_element->prev->data << std::endl;
+    }
+    else {
+        std::cout << "Brak poprzedniego elementu\n";
     }
 }

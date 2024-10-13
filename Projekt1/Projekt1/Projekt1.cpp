@@ -29,6 +29,9 @@ int main()
     std::cout << "Nastepny element po podanym indeksie: ";
     lista.Lista_Wyswietlanie_Nastepnego_elementu(4);
 
+    std::cout << "Poprzedni element po podanym indeksie: ";
+    lista.Lista_Wyswietlanie_Nastepnego_elementu(3);
+
     std::cout << "Elementy listy od konca: ";
     lista.Lista_wyswietl_od_konca();
 
