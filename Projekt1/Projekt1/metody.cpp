@@ -8,6 +8,7 @@ replisty::replisty() : head(0), tail(0), count(0) {}
 replisty::~replisty() {
 }
 
+/*---Dodanie elementu na pocz¹tek listy---*/
 void replisty::Lista_Dodanie_na_poczatek(char v) {
     elisty* nws = new elisty(v);
     nws->next = head;
@@ -21,6 +22,7 @@ void replisty::Lista_Dodanie_na_poczatek(char v) {
     count++;
 }
 
+/*---Wyswietlanie listy---*/
 void replisty::Lista_wyswietl() {
     elisty* obecny_element = head; 
 
@@ -31,6 +33,7 @@ void replisty::Lista_wyswietl() {
     std::cout << std::endl; 
 }
 
+/*---Dodanie elementu na koniec listy---*/
 void replisty::Lista_Dodanie_na_koniec(char v) {
     elisty* nws = new elisty(v); 
     nws->next = 0;          
@@ -45,6 +48,8 @@ void replisty::Lista_Dodanie_na_koniec(char v) {
     tail = nws;                 
     count++;
 }
+
+/*---Wyswietlanie listy od konca---*/
 void replisty::Lista_wyswietl_od_konca(){
     elisty* obecny_element = tail; 
     while (obecny_element != 0) {
@@ -54,6 +59,7 @@ void replisty::Lista_wyswietl_od_konca(){
     std::cout << std::endl; 
 }
 
+/*---Dodanie elementu pod wskazany indeks---*/
 void replisty::Lista_Dodanie_do_srodka(char v, int index) {
     if (index == 0) {
         Lista_Dodanie_na_poczatek(v);
@@ -84,6 +90,7 @@ void replisty::Lista_Dodanie_do_srodka(char v, int index) {
     ++count; 
 }
 
+/*---Usuwanie pierwszego elementu listy---*/
 void replisty::Lista_Usuwanie_pierwszego_elementu() {
     if (head == 0) {
         std::cout << "Lista jest pusta";
@@ -102,6 +109,7 @@ void replisty::Lista_Usuwanie_pierwszego_elementu() {
     --count;
 }
 
+/*---Usuwanie ostatniego elementu listy---*/
 void replisty::Lista_usuwanie_ostatniego_elementu() {
     if (tail == 0) {
         std::cout << "Lista jest pusta";
@@ -118,4 +126,33 @@ void replisty::Lista_usuwanie_ostatniego_elementu() {
         tail = 0;
     }
     --count;
+}
+
+/*---wyswietlanie elementu po wskazanym indeksie---*/
+void replisty::Lista_Wyswietlanie_Nastepnego_elementu(int index) {
+    elisty* obecny_element = head;
+
+    for (int i = 1; i < index; i++) {
+        obecny_element = obecny_element->next;
+    }
+    if (obecny_element->next != 0) {
+        std::cout << obecny_element->next->data << std::endl;
+    }
+    else {
+        std::cout << "Brak nastêpnego elementu\n";
+    }
+}
+
+void replisty::Lista_Wyswietlanie_poprzedniego_elementu(int index) {
+    elisty* obecny_element = head;
+
+    for (int i = 1; i < index; i++) {
+        obecny_element = obecny_element->next;
+    }
+    if (obecny_element->prev != 0) {
+        std::cout << obecny_element->prev->data << std::endl;
+    }
+    else {
+        std::cout << "Brak poprzedniego elementu\n";
+    }
 }

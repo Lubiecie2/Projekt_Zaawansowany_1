@@ -23,5 +23,7 @@ public:
     void Lista_Dodanie_do_srodka(char v, int index);
     void Lista_Usuwanie_pierwszego_elementu();
     void Lista_usuwanie_ostatniego_elementu();
+    void Lista_Wyswietlanie_Nastepnego_elementu(int index);
+    void Lista_Wyswietlanie_poprzedniego_elementu(int index);
 };
 #endif
